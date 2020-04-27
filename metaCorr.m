@@ -58,7 +58,7 @@ upperRange = Range(2);
 lowerLim = Pr + lowerRange * CorrSEM;
 upperLim = Pr + upperRange * CorrSEM;
 
-%% Calculate the overall effect sizes and adding them to the last row
+%% Calculate the overall effect sizes and adding them to the first row
 weight = sampleSize * 100/sum(sampleSize);
 weightedFz = sum(Fz .* sampleSize)/sum(sampleSize);
 weightedPr = (exp(2 * weightedFz) - 1)/(exp(2 * weightedFz) + 1);
