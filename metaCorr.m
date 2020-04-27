@@ -37,7 +37,8 @@ textLoc.negCorr_X = -0.25;
 textLoc.posCorr_X = 0.25;
 textLoc.label_Y = 1.75;
 textLoc.weight_X = 1;
-%% Process the data row by row
+
+%% Process the data: transforming from Pearson's r (Pr) to Fisher's z (Fz) and averaging across studies
 rawCorrCoefs = dataSheet(:, 1);
 sampleSize = dataSheet(:, 2);
 
